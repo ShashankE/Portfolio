@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schudule</title>
+    <script>
+    function pushToBack(){
+      window.location= "home.html";
+    }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/grades.css">
+</head>
+<body>
+  <h1>Schudule</h1>
+    <main class="container">
+        <article class="grid">
+            <section id="tables">
+                <figure>
+                  <table role="grid">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">A/B</th>
+                        <th scope="col">Class</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <th scope="row">A</th>
+                        <th scope="row">Advanced English</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <th scope="row">A</th>
+                        <th scope="row">Advanced Chemistry</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <th scope="row">A</th>
+                        <th scope="row">Advanced French</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <th scope="row">A</th>
+                        <th scope="row">AP World History</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <th scope="row">B</th>
+                        <th scope="row">Technical Theatre</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <th scope="row">B</th>
+                        <th scope="row">Advanced Algebra</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <th scope="row">B</th>
+                        <th scope="row">AP Computer Science Principles</th>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <th scope="row">B</th>
+                        <th scope="row">AP Psychology</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </figure>
+              </section>
+        </article>
+        <input type="button" id="back" value="Back" class="contrast" onclick="pushToBack()">
+    </main>
+</body>
+</html>
