@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign in ~ HAC Frisco </title>
+    <meta name="description" content="A minimalist layout for Login pages. Built with Pico CSS.">
+    <script>
+    function validate(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if ( username == "test" && password == "pass"){
+      window.location = "home.html";
+      return false;
+      }
+    }</script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/loginpage.css">
+  </head>
+  <body>
+    <main class="container">
+      <article class="grid">
+        <div>
+            <h1>Sign into FISD HAC</h1>
+          <form>
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+              <fieldset>
+                <label for="remember">
+                  <input type="checkbox" role="switch" id="remember" name="remember">Remember me</label>
+              </fieldset>
+              <button type="button" value="Login" class="secondary id="submit" onclick="validate()">Login</button>
+            </form>
+          </div>
+        </article>
+      </main>
+  </body>
+</html>
