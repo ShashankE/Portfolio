@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISD HAC homepage</title>
+    <script>
+      function pushGrades(){
+        window.location = "grades.html"
+      }
+      function pushSchudule(){
+        window.location = "schudule.html"
+      }
+      function pushAttendence(){
+        window.location = "attendence.html"
+      }
+      function logout(){
+        window.location = "index.html";
+      }
+    </script>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <main class="container">
+        <article class="grid">
+            <h1>Welcome, test!<br>
+                ~~~~~~~~~~~~~
+            </h1>
+            <input  type="button" id="grades" value="Grades" class="secondary" id="submit" onclick="pushGrades()">
+            <input type="button" id="schudule" value="Schudule" class="secondary" id="submit" onclick="pushSchudule()"> 
+            <input type="button" id="attendence" value="Attendence" class="secondary" id="submit" onclick="pushAttendence()">
+        </article>
+        <input type="button" id="logout" value="Logout" class="contrast" onclick="logout()" style="margin-top: 15px;">
+    </main>
+</body>
+</html>
